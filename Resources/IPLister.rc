@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HANDCURSOR          CURSOR                  "handcurs.cur"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "MainIcon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 329, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_IPHOST,5,15,194,14,ES_AUTOHSCROLL
+    LTEXT           "IP Address / Hostname:",IDC_STATIC,5,5,76,8
+    EDITTEXT        IDC_DETAIL,5,32,236,87,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "Go",IDC_GO,201,15,40,14
+    CONTROL         "Resolve aliases?",IDC_CHK_ALIASES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,82,69,10
+    CONTROL         "Always on top?",IDC_CHK_AOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,98,61,10
+    CONTROL         "List all IPs?",IDC_CHK_ADDRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,50,51,10
+    CONTROL         "Resolve IPs?",IDC_CHK_REVERSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,251,66,56,10
+    GROUPBOX        "Options",IDC_STATIC,245,32,76,87
+END
+
+IDD_NETLOGO DIALOGEX 0, 0, 273, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_NETLOGO"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            "",IDC_ABOUTICON,9,7,20,20
+    LTEXT           "IDC_APPNAME",IDC_APPNAME,84,7,159,8
+    LTEXT           "IDC_APPVERSION",IDC_APPVERSION,84,17,159,8
+    LTEXT           "IDC_APPCOPYRIGHT",IDC_APPCOPYRIGHT,44,53,192,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,63,234,1
+    DEFPUSHBUTTON   "OK",IDC_OKBUTTON,220,69,50,14
+    LTEXT           "IDC_BUILDTIMEDATE",IDC_BUILDTIMEDATE,84,27,159,8
+    LTEXT           "www.NetworkDLS.com",IDC_NETLINK,84,37,159,8
+    LTEXT           "Web site:",IDC_STATIC,44,37,31,8
+    LTEXT           "Application:",IDC_STATIC,44,7,38,8
+    LTEXT           "Version:",IDC_STATIC,44,17,26,8
+    LTEXT           "Build:",IDC_STATIC,44,27,18,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_NETLOGO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "XPTheme.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,4
+ PRODUCTVERSION 1,0,0,4
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "IPv4 Resolution Utility"
+            VALUE "CompanyName", "NetworkDLS"
+            VALUE "FileDescription", "IPv4 Resolution Utility"
+            VALUE "FileVersion", "1.0.0.4"
+            VALUE "InternalName", "IP-Lister"
+            VALUE "LegalCopyright", "Copyright © 2009 NetworkDLS. All rights reserved."
+            VALUE "OriginalFilename", "IPLister.exe"
+            VALUE "ProductName", "IP-Lister"
+            VALUE "ProductVersion", "1.0.0.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLECAPTION        "IP-Lister"
+    IDS_FILEVERSION         "1.0.0.4"
+    IDS_APPCOPYRIGHT        "Copyright © 2009 NetworkDLS. All rights reserved."
+    IDS_REGISTRYKEY         "Software\\NetworkDLS\\IPLister"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
